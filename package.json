@@ -1,0 +1,39 @@
+{
+  "name": "helpers",
+  "version": "1.0.0",
+  "description": "helper functions of coder.tokyo",
+  "main": "dist/helpers.umd.js",
+  "module": "dist/helpers.esm.js",
+  "scripts": {
+    "eslint": "eslint ./src/**/*.js",
+    "test": "jest",
+    "prebuild": "rimraf dist/*",
+    "build": "rollup --config",
+    "postbuild": "BUILD_MINIFY=true rollup --config",
+    "coverage": "npm test -- --coverage",
+    "validate": "npm run eslint && CI=true npm run test"
+  },
+  "author": "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderstokyo/helpers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coderstokyo/helpers/issues"
+  },
+  "homepage": "https://github.com/coderstokyo/helpers/blob/master/README.md",
+  "devDependencies": {
+    "@babel/preset-env": "^7.3.4",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.3.1",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.6.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-terser": "^4.0.4"
+  }
+}
