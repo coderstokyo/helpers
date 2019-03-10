@@ -1,7 +1,7 @@
 {
   "name": "helpers",
   "version": "1.0.0",
-  "description": "helper functions of coder.tokyo",
+  "description": "helper functions of coders.tokyo",
   "main": "dist/helpers.umd.js",
   "module": "dist/helpers.esm.js",
   "scripts": {
